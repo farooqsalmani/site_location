@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Theme implementation of location with current time block.
+ *
+ * Available options:
+ * - location: City and country as the location.
+ * - current_time: Current time in the site location zone.
+ * - message: Message to print if location is not set.
+ */
+#}
+<div{{ attributes }}>
+{% if location %}
+  <div class="location-wrapper">{{ location }}</div>
+  <div class="current-time-wrapper">{{ current_time }}</div>
+{% else %}
+  {{ message }}
+{% endif %}
+</div>

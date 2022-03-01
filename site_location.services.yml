@@ -1,0 +1,4 @@
+services:
+  site_location.location_core:
+    class: Drupal\site_location\Service\LocationCore
+    arguments: ['@config.factory']

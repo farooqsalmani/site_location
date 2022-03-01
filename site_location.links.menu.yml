@@ -1,0 +1,6 @@
+site_location.settings:
+  title: Site Location Settings
+  description: Configure settings for site location (country, city and timezone).
+  parent: system.admin_config_content
+  route_name: site_location.settings
+  weight: 10
